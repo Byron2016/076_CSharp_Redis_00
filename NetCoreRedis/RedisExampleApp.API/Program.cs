@@ -14,6 +14,10 @@ namespace RedisExampleApp.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            //Start: Services added for this project 
+
+            //End: Services added for this project 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -1,5 +1,13 @@
 # 076_CSharp_Redis_00
 
+- REDIS_SERVICE 
+	- Class Library: A project for creating a class library that targets .NET or .NET Standard.
+	- Add referento to API.
+	- Packages 
+		- StackExchange.Redis
+	- Add RedisService Class
+	
+	
 - API 
 	- ASP.NET Core Web API 
 		- Framework: .NET 8.0
@@ -18,11 +26,11 @@
 		
 	- Add Models / Repositories / Services
 	- Add Controllers
+	- Add reference to REDIS_SERVICE
 
 	- TODO
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 
 		
 		
-- REDIS_SERVICE 
-	- Class Library: A project for creating a class library that targets .NET or .NET Standard.
+
 	
