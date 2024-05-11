@@ -17,6 +17,7 @@
 		- https://localhost:7221/weatherForecast
 		
 	- Add Models / Repositories / Services
+	- Add Controllers
 
 	- TODO
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 
