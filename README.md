@@ -8,3 +8,13 @@
 		- Enable OpenAPI support
 		- Do not use top-level statements
 		- Use controllers
+		
+	- Packages 
+		- Microsoft.EntityFrameworkCore
+		- Microsoft.EntityFrameworkCore.InMemory
+		- 
+	- Ejecución
+		- https://localhost:7221/weatherForecast
+
+	- TODO
+		- para qué sirve: Microsoft.AspNetCore.OpenApi 
