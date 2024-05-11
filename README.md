@@ -15,6 +15,8 @@
 		- 
 	- Ejecución
 		- https://localhost:7221/weatherForecast
+		
+	- Add Models / Repositories / Services
 
 	- TODO
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 
