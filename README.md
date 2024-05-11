@@ -21,3 +21,8 @@
 
 	- TODO
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 
+		
+		
+- REDIS_SERVICE 
+	- Class Library: A project for creating a class library that targets .NET or .NET Standard.
+	
