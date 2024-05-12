@@ -27,6 +27,8 @@
 	- Add Models / Repositories / Services
 	- Add Controllers
 	- Add reference to REDIS_SERVICE
+		
+	- provider.GetRequiredService	
 
 	- TODO
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 

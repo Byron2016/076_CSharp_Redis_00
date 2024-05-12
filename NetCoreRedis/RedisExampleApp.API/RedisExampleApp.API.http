@@ -4,4 +4,11 @@
 GET {{RedisExampleApp.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### Products GET
+GET {{RedisExampleApp.API_HostAddress}}/api/Products/GetAll/
+Accept: application/json
+
+
+### Products GET ID
+GET {{RedisExampleApp.API_HostAddress}}/api/Products/GetById/3
+Accept: application/json
