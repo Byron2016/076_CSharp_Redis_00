@@ -35,5 +35,7 @@
 		
 		
 - RedisExampleApp
-	- Console application.
+	- ASP.NET Core Web App (Model-View-Controller)
+	
+
 	
