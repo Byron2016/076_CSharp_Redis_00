@@ -34,5 +34,6 @@
 		- para qué sirve: Microsoft.AspNetCore.OpenApi 
 		
 		
-
+- RedisExampleApp
+	- Console application.
 	
