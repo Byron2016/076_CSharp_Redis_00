@@ -1,5 +1,7 @@
 # 076_CSharp_Redis_00
 
+- Origen: https://github.com/cihatsolak/net7-redis-database
+
 - REDIS_SERVICE 
 	- Class Library: A project for creating a class library that targets .NET or .NET Standard.
 	- Add referento to API.
@@ -37,5 +39,20 @@
 - RedisExampleApp
 	- ASP.NET Core Web App (Model-View-Controller)
 	
+	- Packages
+		- StackExchange.Redis
+		- Microsoft.Extensions.Caching.StackExchangeRedis
+		
+	- References
+		- The difference between GetService() and GetRequiredService() in ASP.NET Core
+			- https://andrewlock.net/the-difference-between-getservice-and-getrquiredservice-in-asp-net-core/
+		- 
+	- Funcionamiento
+		- En appsettings.json están una entrada RedisSttings con los parámetros de conexión a la base de datos.
+		- Estos parámetros son ingresado en la clase RedisSettings a través del servicio 
+			- builder.Services.Configure<RedisSettings>(builder.Configuration.GetSection(nameof(RedisSettings)));
+		- Posteriormente se ejecuta el middelware que llama a la conexión con servidor de Redis.
+			- var redisStackExchangeAPI= app.Services.GetRequiredService<IRedisStackExchangeAPI>();
+			  redisStackExchangeAPI.ConnectServer();
 
 	
