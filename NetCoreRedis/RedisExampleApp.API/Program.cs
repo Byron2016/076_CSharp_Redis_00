@@ -1,5 +1,6 @@
 namespace RedisExampleApp.API
 {
+    // github.com/cihatsolak/net7-redis-database.git
     public class Program
     {
         public static void Main(string[] args)
@@ -35,14 +36,13 @@ namespace RedisExampleApp.API
             {
                 var appDbContext = provider.GetRequiredService<AppDbContext>();
                 var redisService = provider.GetRequiredService<RedisService>();
-                //var logger = provider.GetRequiredService<ILogger<ProductRepositoryWithLogDecorator>>();
+                var logger = provider.GetRequiredService<ILogger<ProductRepositoryWithLogDecorator>>();
 
                 var productRepository = new ProductRepository(appDbContext);
-                //var productRepositoryWithCacheDecorator = new ProductRepositoryWithCacheDecorator(productRepository, redisService);
-                //var productRepositoryWithLogDecorator = new ProductRepositoryWithLogDecorator(logger, productRepositoryWithCacheDecorator);
+                var productRepositoryWithCacheDecorator = new ProductRepositoryWithCacheDecorator(productRepository, redisService);
+                var productRepositoryWithLogDecorator = new ProductRepositoryWithLogDecorator(logger, productRepositoryWithCacheDecorator);
 
-                //return productRepositoryWithLogDecorator;
-                return productRepository;
+                return productRepositoryWithLogDecorator;
             });
 
             builder.Services.AddScoped<IProductService, ProductService>();
